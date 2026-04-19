@@ -1,2 +1,5 @@
 com/ip241k/skoryk/DatabaseServlet.class
 com/ip241k/skoryk/UserServlet.class
+com/ip241k/skoryk/model/User.class
+com/ip241k/skoryk/config/DatabaseConfig.class
+com/ip241k/skoryk/dao/UserDAO.class

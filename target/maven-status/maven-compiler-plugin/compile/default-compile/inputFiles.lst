@@ -1,2 +1,5 @@
 /home/oleks/IdeaProjects/JavaSpringLR/src/main/java/com/ip241k/skoryk/DatabaseServlet.java
 /home/oleks/IdeaProjects/JavaSpringLR/src/main/java/com/ip241k/skoryk/UserServlet.java
+/home/oleks/IdeaProjects/JavaSpringLR/src/main/java/com/ip241k/skoryk/config/DatabaseConfig.java
+/home/oleks/IdeaProjects/JavaSpringLR/src/main/java/com/ip241k/skoryk/dao/UserDAO.java
+/home/oleks/IdeaProjects/JavaSpringLR/src/main/java/com/ip241k/skoryk/model/User.java
