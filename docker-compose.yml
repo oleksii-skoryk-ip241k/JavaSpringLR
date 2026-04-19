@@ -10,6 +10,13 @@ services:
       MYSQL_ROOT_PASSWORD: 12345678
     ports:
       - "3306:3306"
+    volumes:
+      - ./init:/docker-entrypoint-initdb.d
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "root", "-p12345678"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
 
   tomcat:
     image: tomcat:9.0-jdk11-temurin
@@ -19,4 +26,5 @@ services:
     volumes:
       - ./target/JavaSpringLR.war:/usr/local/tomcat/webapps/JavaSpringLR.war
     depends_on:
-      - db
+      db:
+        condition: service_healthy
